@@ -71,7 +71,7 @@ h1 {
     padding: 18px;
     border-radius: 15px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.05);
-    font-size: 13px; /* Reduced by 2px from original 15px */
+    font-size: 13px;
 }
 
 /* STATS */
@@ -97,7 +97,7 @@ h1 {
 /* BUTTON */
 .join-btn {
     display: block;
-    margin: 10px 20px 25px; /* reduced top margin to be closer to card */
+    margin: 10px 20px 25px;
     padding: 16px;
     text-align: center;
     background: linear-gradient(135deg, #ff2f7a, #ff4f9a);
@@ -106,6 +106,11 @@ h1 {
     font-size: 18px;
     text-decoration: none;
     box-shadow: 0 8px 20px rgba(255, 47, 122, 0.3);
+    transition: 0.3s;
+}
+
+.join-btn:hover {
+    transform: scale(1.05);
 }
 
 /* FEATURES */
@@ -113,16 +118,18 @@ h1 {
     display: flex;
     justify-content: space-around;
     margin: 20px;
+    flex-wrap: wrap;
 }
 
 .feature {
     background: white;
     padding: 15px;
     border-radius: 15px;
-    width: 22%;
+    width: 45%;
     text-align: center;
     font-size: 12px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    margin-bottom: 10px;
 }
 
 .feature i {
@@ -130,9 +137,6 @@ h1 {
     margin-bottom: 5px;
 }
 </style>
-
-
-
 </head>
 
 <body>
@@ -157,8 +161,8 @@ h1 {
     <p>Join for insights, analysis & community discussions</p>
 </div>
 
-<!-- Moved Join Telegram button just below the card -->
-<a href="#" onclick="trackSubscribeAndRedirect()" class="join-btn">
+<!-- ✅ UPDATED BUTTON -->
+<a href="https://telegram.me/+cdfXSddiMxpmYTdl" target="_blank" rel="noopener noreferrer" class="join-btn">
     <i class="fas fa-mobile-alt"></i> Join Telegram Now
 </a>
 
