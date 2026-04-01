@@ -9,6 +9,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+<!-- ✅ Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '2064521394406792');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2064521394406792&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
 <style>
 body {
     margin: 0;
@@ -16,7 +37,6 @@ body {
     background: #f6f6f6;
 }
 
-/* HEADER */
 .header {
     background: linear-gradient(135deg, #ff2f7a, #ff4f9a);
     padding: 60px 20px 40px;
@@ -39,7 +59,6 @@ h1 {
     letter-spacing: 1px;
 }
 
-/* TAGS */
 .tag {
     display: inline-block;
     padding: 8px 18px;
@@ -58,13 +77,11 @@ h1 {
     color: #333;
 }
 
-/* PREMIUM TEXT */
 .premium {
     margin-top: 12px;
     font-size: 15px;
 }
 
-/* CARD */
 .card {
     background: linear-gradient(135deg, #ffffff, #ffeaf3);
     margin: 20px;
@@ -74,7 +91,6 @@ h1 {
     font-size: 13px;
 }
 
-/* STATS */
 .stats {
     display: flex;
     gap: 15px;
@@ -94,7 +110,6 @@ h1 {
     color: #ff2f7a;
 }
 
-/* BUTTON */
 .join-btn {
     display: block;
     margin: 10px 20px 25px;
@@ -113,7 +128,6 @@ h1 {
     transform: scale(1.05);
 }
 
-/* FEATURES */
 .features {
     display: flex;
     justify-content: space-around;
@@ -161,9 +175,13 @@ h1 {
     <p>Join for insights, analysis & community discussions</p>
 </div>
 
-<!-- ✅ UPDATED BUTTON -->
-<a href="https://telegram.me/+cdfXSddiMxpmYTdl" target="_blank" rel="noopener noreferrer" class="join-btn">
-    <i class="fas fa-mobile-alt"></i> Join Telegram Now
+<!-- ✅ BUTTON WITH SUBSCRIBE EVENT -->
+<a href="https://telegram.me/+cdfXSddiMxpmYTdl"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="join-btn"
+   onclick="fbq('track', 'Subscribe');">
+   <i class="fas fa-mobile-alt"></i> Join Telegram Now
 </a>
 
 <div class="stats">
